@@ -7,7 +7,7 @@ define(function(require) {
 
 
         preRender: function() {
-            this.$el.addClass("no-state");
+            //this.$el.addClass("no-state");
             // Checks to see if the blank should be reset on revisit
             this.checkIfResetOnRevisit();
         },
