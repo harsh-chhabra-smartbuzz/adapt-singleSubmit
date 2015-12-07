@@ -3,7 +3,7 @@ define(function(require) {
     var ComponentView = require('coreViews/componentView');
     var Adapt = require('coreJS/adapt');
 
-    var singlesubmit = ComponentView.extend({
+    var SingleSubmit = ComponentView.extend({
 
 
         preRender: function() {
@@ -48,8 +48,6 @@ define(function(require) {
 
     });
 
-    Adapt.register('singlesubmit', singlesubmit);
-
-    return singlesubmit;
+    Adapt.register('singleSubmit', SingleSubmit);
 
 });
