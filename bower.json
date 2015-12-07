@@ -1,0 +1,18 @@
+{
+    "name": "adapt-singlesubmit",
+    "repository": "https://github.com/cgkineo/adapt-singlesubmit",
+    "version": "2.0.2",
+    "homepage": "https://github.com/cgkineo/adapt-singlesubmit",
+    "authors": [
+        "Oliver Foster <oliver.foster@kineo.com"
+    ],
+    "displayName": "Single Submit",
+    "component": "singlesubmit",
+    "description": "This is description of the component",
+    "main": "/js/adapt-singlesubmit.js",
+    "keywords" : [
+        "adapt-singlesubmit",
+        "adapt-components"
+    ]    
+}
+
