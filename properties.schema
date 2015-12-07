@@ -10,14 +10,6 @@
       "enum": ["full-width", "half-width", "both"],
       "default": "both",
       "editorOnly": true
-    },
-    "submit": {
-      "type": "string",
-      "required": true,
-      "default": "Submit",
-      "inputType": "Text",
-      "validators": [],
-      "help": "This is submit button text"
     }
   }
 }
