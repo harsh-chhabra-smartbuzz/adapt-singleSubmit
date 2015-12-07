@@ -16,7 +16,7 @@
       "required": true,
       "default": "Submit",
       "inputType": "Text",
-      "validators": ['require'],
+      "validators": [],
       "help": "This is submit button text"
     }
   }

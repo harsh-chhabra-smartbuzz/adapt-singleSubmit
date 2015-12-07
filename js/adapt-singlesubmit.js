@@ -14,7 +14,7 @@ define(function(require) {
 
         postRender: function() {
             this.setReadyStatus();
-            this.$('.component-inner').on('inview', _.bind(this.inview, this));
+            this.$('.block-inner').on('inview', _.bind(this.inview, this));
         },
 
         // Used to check if the blank should reset on revisit
