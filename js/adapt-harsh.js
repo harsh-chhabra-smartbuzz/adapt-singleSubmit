@@ -3,18 +3,18 @@ define(function(require) {
     var ComponentView = require('coreViews/componentView');
     var Adapt = require('coreJS/adapt');
 
-    var singleSubmit = ComponentView.extend({
+    var Harsh = ComponentView.extend({
 
 
         preRender: function() {
-            //this.$el.addClass("no-state");
+            this.$el.addClass("no-state");
             // Checks to see if the blank should be reset on revisit
             this.checkIfResetOnRevisit();
         },
 
         postRender: function() {
             this.setReadyStatus();
-            this.$('.block-inner').on('inview', _.bind(this.inview, this));
+            this.$('.component-inner').on('inview', _.bind(this.inview, this));
         },
 
         // Used to check if the blank should reset on revisit
@@ -48,8 +48,8 @@ define(function(require) {
 
     });
 
-    Adapt.register('singlesubmit', singleSubmit);
+    Adapt.register('harsh', Harsh);
 
-    return singleSubmit;
+    return Harsh;
 
 });

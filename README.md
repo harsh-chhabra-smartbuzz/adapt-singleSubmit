@@ -1,4 +1,3 @@
-adapt-singleSubmit
-================
+# adapt-harsh  
 
-Article single submit button
+testing
