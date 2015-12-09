@@ -1,4 +1,4 @@
-adapt-singleSubmit
-================
+# adapt-singleSubmit
 
-Article single submit button
+Submit all assessment on single click
+    

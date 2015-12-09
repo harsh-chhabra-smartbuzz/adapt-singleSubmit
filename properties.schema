@@ -2,14 +2,70 @@
   "type":"object",
   "$schema": "http://json-schema.org/draft-04/schema",
   "id": "http://jsonschema.net",
-  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "required":false,
   "properties":{
-    "_supportedLayout": {
-      "type": "string",
-      "required": true,
-      "enum": ["full-width", "half-width", "both"],
-      "default": "both",
-      "editorOnly": true
+    "pluginLocations": {
+      "type":"object",
+      "required":true,
+      "properties":{
+        "config": {
+          "type":"object"
+        },
+        "course": {
+          "type":"object"
+        },
+        "contentobject": {
+          "type":"object"
+        },
+        "article": {
+          "type":"object",
+          "properties":{
+            "_assessment": {
+              "type":"object",
+              "required":false,
+              "legend": "Single Submit",
+              "properties":{
+                "_isEnabled": {
+                  "type":"boolean",
+                  "required":true,
+                  "title": "Enabled",
+                  "inputType": { "type": "Boolean", "options": [false, true]},
+                  "validators": []
+                },
+                "_singleSubmit": {
+                  "type":"object",
+                  "required":false,
+                  "title": "Single Submit",
+                  "properties":{
+                     "_isEnabled": {
+                      "type":"boolean",
+                      "required":false,
+                      "title": "Single Submit",
+                      "inputType": { "type": "Boolean", "options": [false, true]},
+                      "validators": []
+                    },
+                    "submit": {
+                      "type":"string",
+                      "required":true,
+                      "title": "Submit Button Text",
+                      "default": "Submit",
+                      "inputType": "Text",
+                      "validators": [],
+                      "help": "This text will show on submit button"
+                    }                                   
+                  }    
+                }               
+              }    
+            }
+          }
+        },             
+        "block": {
+          "type":"object"
+        },
+        "component": {
+          "type":"object"
+        }
+      } 
     }
   }
 }
